@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% comment %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {% endcomment %}
+<!------ Include the above in your HEAD tag ---------->
+{% load static %}
+{% block body %}
+
+
+<div class="container">
+    <hr>
+
+
+    <div class="card" style='text-align:center'>
+        <div class="row">
+            <aside class="col-sm-5 border-right">
+                <article class="gallery-wrap">
+                    <div class="img-big-wrap">
+                        <div> <a href="#"><img class='rounded shadow-lg p-3 mb-5 bg-white rounded' src="{{plus.image.url}}"></a></div>
+                    </div> <!-- slider-product.// -->
+                    <div class="img-small-wrap">
+
+                    </div> <!-- slider-nav.// -->
+                </article> <!-- gallery-wrap .end// -->
+            </aside>
+            <aside class="col-sm-7">
+                <article class="card-body p-5">
+                    <h3 class="title mb-3">{{plus.name}} {{plus.region}} regionu {{plus.period}} Aylıq  </h3>
+
+                    <p class="price-detail-wrap">
+                        <span class="price h3 text-warning">
+                            <span class="currency">{{plus.price}} AZN</span>
+                        </span>
+                    </p> <!-- price-detail-wrap .// -->
+                    <dl class="item-property">
+                        <dt>Məlumat</dt>
+                        <dd>
+                            <p>
+                                • Aylıq Plus+ üçün 3 pulsuz oyun<br>
+                                • Playstation Store'da Xüsusi Endirimlər <br>
+                                • Oyunlarınızı online oynamaq imkanı <br>
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt>Region :</dt>
+                        <dd>{{plus.region}}</dd>
+                    </dl> <!-- item-property-hor .// -->
+                    <dl class="param param-feature">
+                        <dt>Qiymət :</dt>
+                        <dd>{{plus.price}} AZN</dd>
+                    </dl> <!-- item-property-hor .// -->
+                    <dl class="param param-feature">
+                        <dt>Sifariş</dt>
+                        <dd>Məhsulu sifariş etmək üçün zəhmət olmasa <a href="https://www.instagram.com/edelgamecenter/"> instagram hesabımız</a>a yazın</dd>
+                    </dl> <!-- item-property-hor .// -->
+                    <a href="https://www.instagram.com/edelgamecenter/"><img src="{% static 'img/instagram.png' %}" style="width:90px"></a>
+        </div> <!-- row.// -->
+        <hr>
+        
+        </article> <!-- card-body.// -->
+        </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+</div> <!-- card.// -->
+
+
+</div>
+<!--container.//-->
+
+
+</article>
+{% endblock %}

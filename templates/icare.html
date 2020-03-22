@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% comment %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {% endcomment %}
+<!------ Include the above in your HEAD tag ---------->
+{% load static %}
+{% block body %}
+
+
+<div class="container">
+    <hr>
+
+
+    <div class="card rounded shadow-lg p-3 mb-5 bg-white" style='text-align:center'>
+        <div class="row">
+            <aside class="col-sm-5 border-right">
+                <article class="gallery-wrap">
+                    <div class="img-big-wrap">
+                        <div><a href="https://www.instagram.com/edelgamecenter/"><img src="{% static 'img/homeps474.jpg' %}" class="card-img-top"></a></div>
+                    </div> <!-- slider-product.// -->
+                    <div class="img-small-wrap">
+
+                    </div> <!-- slider-nav.// -->
+                </article> <!-- gallery-wrap .end// -->
+            </aside>
+            <aside class="col-sm-7">
+                <article class="card-body p-5">
+                    <h3 class="title mb-3">Playstation4 Slim 1TB</h3>
+
+                    <p class="price-detail-wrap">
+                        <span class="price h3 text-warning">
+                            <span class="currency" style="color:black">Qiymət :</span>
+                        </span>
+                    </p> <!-- price-detail-wrap .// -->
+                    <dl class="item-property">
+                            <dd>
+
+                                    • Günlük icarə : 18 AZN<br>
+                                    • 3 Günlük icarə : 45 AZN<br>
+                                    • Həftəlik icarə : 100 AZN<br>
+                            </dd>
+                        </dl>
+                        <dt>Məlumat</dt>
+                        <dd>
+                            <p>Model:Playstation 4 slim 1tb(black)
+                                <br>
+
+                                Aksesuarlar: 2 ədəd Dualshock 4
+                                <br>
+                                Game List:<br>
+                                • Fifa 20<br>
+                                • Pes20<br>
+                                • Gta 5<br>
+                                • UFC 3<br>
+                                • Mortal kombat 11<br>
+                                • Call of Duty Black ops 2<br>
+                                • God of War<br>
+                                • Days Gone<br>
+                                • Spiderman<br>
+                                • The last of us<br>
+                                • Uncharted 4<br>
+                                • Need for speed<br>
+                                • Rocket League<br>
+                                • Drive Club<br>
+                                • Horizon zero down<br>
+                                • Crash Bandicot<br>
+                                • Crash Racing Nitro<br>
+                                • Bloodborne</p><br>
+                        </dd>
+                    </dl>
+                    <a href="https://www.instagram.com/edelgamecenter/"><img src="{% static 'img/instagram.png' %}" style="width:90px"></a>
+
+        </div> <!-- row.// -->
+        <hr>
+
+    </div> <!-- row.// -->
+</div> <!-- card.// -->
+
+
+</div>
+<!--container.//-->
+
+
+
+{% endblock %}

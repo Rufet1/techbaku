@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+<hr>
+<div class="container">
+    <div class="row">
+        {% for plus in plus %}
+
+        <a href="{{plus.get_absolute_url}}">
+        <div class="col- col-md col-sm-6 col-lg" style="padding-bottom:20px">
+            <div class="card" style="width:12rem;display: inline-block;">
+                <img src="{{plus.image.url}}" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">{{plus.name}}</h5>
+                    <p class="card-text">{{plus.price}} AZN</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        {% endfor %}
+    </div>
+</div>
+<br><br><br><br><br>
+<hr>
+{% endblock %}

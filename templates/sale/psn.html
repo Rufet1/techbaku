@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+<hr>
+<div class="container">
+    <div class="row">
+        {% for psn in psn %}
+
+        <a href="{{psn.get_absolute_url}}">
+        <div class="col col-md-3" style="padding-bottom:20px">
+            <div class="card" style="width: 12rem;display: inline-block;">
+                <img src="{{psn.image.url}}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{psn.name}}</h5>
+                    <p class="card-text">{{psn.price}} AZN</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block body %}
+<br><br><br>
+<div class='container'>
+  <div class="row" style="padding-top:10px">
+    <a href="{% url 'sale:rent'  %}">
+      <div class="col mb-3" style="max-height:50px">
+        <div class="card">
+          <img src="{% static 'img/homeps.jpeg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Playstation4 İcarə</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+    </a>
+  </div>
+  <a href="{% url 'sale:plus'  %}">
+    <div class="col mb-3">
+      <div class="card">
+        <img src="{% static 'img/psn.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Playstation Plus+</h5>
+        </div>
+      </div>
+  </a>
+</div>
+<a href="{% url 'sale:psn' %}">
+  <div class="col mb-3">
+    <div class="card">
+      <img src="{% static 'img/psnow.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Playstation Gift Cards</h5>
+      </div>
+    </div>
+
+</a>
+</div>
+<a href="{% url 'sale:game' %}">
+<div class="col mb-3">
+  <div class="card">
+    <img src="{% static 'img/game.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Oyunlar</h5>
+    </div>
+  </div>
+</a>
+</div>
+</div>
+</div>
+<br><br><br><br><br>
+{% endblock  %}
